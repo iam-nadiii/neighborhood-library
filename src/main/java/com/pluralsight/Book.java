@@ -6,6 +6,19 @@ public class Book {
     private String title;
     private boolean isCheckedOut;
 
+    public Book[] books = new Book[6];
+
+    public Book(){
+
+    }
+
+    public Book(String title, String isbn, int id, boolean isCheckedOut){
+        this.title = title;
+        this.isbn = isbn;
+        this.id = id;
+        this.isCheckedOut = isCheckedOut;
+    }
+
     public String getIsbn() {
         return isbn;
     }
@@ -30,12 +43,16 @@ public class Book {
         this.title = title;
     }
 
-    public boolean isCheckedOut() {
+    public boolean getIsCheckedOut() {
         return isCheckedOut;
     }
 
-    public void setCheckedOut(boolean checkedOut) {
+    public void setIsCheckedOut(boolean checkedOut) {
         isCheckedOut = checkedOut;
+    }
+
+    public void checkIn(String name){
+
     }
 
 
@@ -70,38 +87,50 @@ public class Book {
 //- id: int
 //- isbn: String
 //- title: String
+
 //- isCheckedOut: boolean
 //- checkedOutTo: String
 //o Methods
 //- checkOut(name)
 //- checkIn()
+
 //• Use an array to hold an inventory of at least 20 books of your choice
+
 //• When a book is checked out
 //o the books checkedOutTo variable should be set to the name provided
 //o the isCheckedOut variable should be set to true
+
+
 //        • When a book is checked in
 //o the books checkedOutTo variable should be set to ""
 //o the isCheckedOut variable should be set to false
+
 //Screens
 //• The Store Home Screen - The home screen should display a list of options that a
 //user can choose from.
 //o Show Available Books
 //o Show Checked Out Books
 //o Exit - closes out of the application
+
 //• Show Available Books - Displays a list of all books that are not currently checked
 //out. Display the Id, ISBN and Title of the book.
 //o Prompt the user to either select a book to check out, or exit to go back to
 //the home screen
 //o If the user wants to check out a book, prompt them for their name
 //o Then check out the book
+
 //• Show Checked Out books - This displays a list of all the books that are currently
 //checked out. Display the Id, ISBN, Title and Name of the person who has the book
 //checked out. Prompt the user to
 //o C - to Check In a book
 //o X - to go back to the home screen
+
+
 //• Check In a book - Prompt the user for the ID of the book they want to check in.
 //o Check in the book with the specified id
 //o Go back to the home screen
+
+
 //4
 //What Makes a Good Workshop Project?
 //        • You should:
