@@ -6,7 +6,7 @@ public class Book {
     private String title;
     private boolean isCheckedOut;
 
-    public Book[] books = new Book[6];
+    public static Book[] booksList = new Book[6];
 
     public Book(){
 
